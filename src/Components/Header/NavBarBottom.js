@@ -23,11 +23,11 @@ const NavBarBottom = () => {
             </span>
             {courseList && (
               <div>
-                <ul className="absolute w-60 h-52 bg-white top-10 left-5 shadow-dropDownShadow flex flex-col gap-1 z-50 rounded-md">
+                <ul className="absolute w-60 h-52 bg-white top-10 left-5 shadow-listShadow flex flex-col gap-1 z-50 rounded-md">
                   {courseItems.map((items) => (
                     <li
                       key={items.id}
-                      className="text-sm text-gray-500 cursor-pointer font-poppins px-2  flex justify-between pb-1 pt-2"
+                      className="text-sm  text-gray-500 cursor-pointer font-poppins px-2  flex justify-between pb-1 pt-2"
                     >
                       {items.title}
                       <NavigateNextIcon />
@@ -40,11 +40,11 @@ const NavBarBottom = () => {
 
           {/*navlist*/}
 
-          <span>PW Skills Lab</span>
-          <span>Job Portal</span>
-          <span>Experience Portal</span>
-          <span>Become an Affiliate</span>
-          <span>Hall of Fame</span>
+          <span className="cursor-pointer">PW Skills Lab</span>
+          <span className="cursor-pointer">Job Portal</span>
+          <span className="cursor-pointer">Experience Portal</span>
+          <span className="cursor-pointer">Become an Affiliate</span>
+          <span className="cursor-pointer">Hall of Fame</span>
 
           {/*more dropdown*/}
           <div className="relative">
@@ -56,7 +56,7 @@ const NavBarBottom = () => {
             </span>
             {moreList && (
               <div>
-                <ul className="absolute w-52 h-auto bg-white  top-10 right-5 flex flex-col gap-1 z-50 rounded-md shadow-dropDownShadow">
+                <ul className="absolute w-52 h-auto bg-white  top-10 right-5 flex flex-col gap-1 z-50 rounded-md shadow-listShadow">
                   {moreItems.map((e) => (
                     <li
                       key={e.id}

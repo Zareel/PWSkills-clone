@@ -5,7 +5,7 @@ import {
   bannerTwo,
   bannerThree,
   bannerFour,
-} from "../../assets/image";
+} from "../../img/img.js";
 const Banner = () => {
   const settings = {
     dots: false,
